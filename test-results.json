@@ -1,0 +1,202 @@
+{
+  "config": {
+    "configFile": "E:\\Patient-Test-Suite\\playwright.config.js",
+    "rootDir": "E:/Patient-Test-Suite/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "E:/Patient-Test-Suite/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "patient-portal",
+        "name": "patient-portal",
+        "testDir": "E:/Patient-Test-Suite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/patient-portal.spec.js"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "E:/Patient-Test-Suite/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "queue-registration",
+        "name": "queue-registration",
+        "testDir": "E:/Patient-Test-Suite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/patient-registration.spec.js"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "patient-portal.spec.js",
+      "file": "patient-portal.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Patient Portal - Correct Flow with Patient Selection",
+          "file": "patient-portal.spec.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Select existing patient and go to dashboard",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "patient-portal",
+                  "projectName": "patient-portal",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 44120,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Entered mobile number: 6381923830\n"
+                        },
+                        {
+                          "text": "Entering OTP: 7788\n"
+                        },
+                        {
+                          "text": "Successfully selected existing patient and went to dashboard\n"
+                        },
+                        {
+                          "text": "Dashboard URL: https://patient.dev-cloudcaresindia.com/patient/portal/5\n"
+                        },
+                        {
+                          "text": "🔹 Clicking Overview\n"
+                        },
+                        {
+                          "text": "🔹 Clicking Appointments\n"
+                        },
+                        {
+                          "text": "🔹 Clicking Prescriptions\n"
+                        },
+                        {
+                          "text": "🔹 Clicking Diagnoses\n"
+                        },
+                        {
+                          "text": "🔹 Clicking Visit History\n"
+                        },
+                        {
+                          "text": "🔹 Clicking Lab Reports\n"
+                        },
+                        {
+                          "text": "🔹 Clicking Queue Status\n"
+                        },
+                        {
+                          "text": "🔹 Clicking Purchase Medicines\n"
+                        },
+                        {
+                          "text": "🔹 Clicking Chat with CCare AI\n"
+                        },
+                        {
+                          "text": "Dashboard navigation completed successfully!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Open application and click Patient Portal",
+                          "duration": 6164
+                        },
+                        {
+                          "title": "Enter mobile number and send OTP",
+                          "duration": 3449
+                        },
+                        {
+                          "title": "Enter OTP and verify",
+                          "duration": 7797
+                        },
+                        {
+                          "title": "Select existing patient and go to dashboard",
+                          "duration": 8609
+                        },
+                        {
+                          "title": "Test dashboard sidebar navigation",
+                          "duration": 16743
+                        }
+                      ],
+                      "startTime": "2025-10-25T10:07:14.092Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6b50ec00da7e55765466-0baf676462aaa77e416f",
+              "file": "patient-portal.spec.js",
+              "line": 17,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-25T10:07:12.147Z",
+    "duration": 47730.204,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

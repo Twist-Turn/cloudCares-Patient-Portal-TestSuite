@@ -1,0 +1,24 @@
+{
+  "name": "patient-test-suite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1"
+  },
+  
+  "scripts": {
+    "test": "npx playwright test",
+    "test:portal": "npx playwright test patient-portal.spec.js",
+    "test:registration": "npx playwright test patient-registration.spec.js",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report"
+  }
+
+
+}
